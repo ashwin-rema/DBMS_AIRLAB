@@ -207,6 +207,6 @@ if ( isset($_SESSION['error']) ) {
 	}
 ?>
 <form method="post">
-<input class="btn btn-outline-primary" type="submit" name = "back" value="Back">
+<input class="btn btn-outline-success" type="submit" name = "back" value="Back">
 </body>
 </html>
