@@ -120,99 +120,99 @@ echo '<h1>Welcome to AIR LAB Website'." - ".$_SESSION['name']." ".'</h1>';
 if($_SESSION['user_cat'] == 3){
 	echo '<form method="POST" action="main.php">
 	<div>
-		<input type="radio" id="ins" name="operation" value="insert">
-		<label for="ins">Insert</label><br>
-		<input type="radio" id="upd" name="operation" value="update">
-		<label for="upd">Update</label><br>
-		<input type="radio" id="del" name="operation" value="delete">
-		<label for="del">Delete</label><br>
-		<input type="radio" id="rea" name="operation" value="read">
-		<label for="rea">Read</label>
+		<input type="radio" class="btn-check" id="ins" name="operation" value="insert" autocomplete="off">
+		<label class="btn btn-outline-Info" for="ins">Insert</label><br>
+		<input type="radio" class="btn-check" id="upd" name="operation" value="update" autocomplete="off">
+		<label class="btn btn-outline-Secondary" for="upd">Update</label><br>
+		<input type="radio" class="btn-check" id="del" name="operation" value="delete" autocomplete="off">
+		<label class="btn btn-outline-Warning" for="del">Delete</label><br>
+		<input type="radio" class="btn-check" id="rea" name="operation" value="read" autocomplete="off">
+		<label class="btn btn-outline-Light" for="rea">Read</label>
 	</div>
 	<div>
 		<h3>Tables available: </h3>
 	</div>
 	<div>
-		<input type="radio" id="proj" name="table" value="project">
-		<label for="proj">Project Table</label><br>
-		<input type="radio" id="phd" name="table" value="research">
-		<label for="research">Research Table</label><br>
-		<input type="radio" id="Mou" name="table" value="Moudetails">
-		<label for="Mou">Memorandum of Understanding Table</label><br>
-		<input type="radio" id="fund" name="table" value="funds">
-		<label for="fund">Funds Received Table</label><br>
-		<input type="radio" id="priv" name="table" value="private">
-		<label for="priv">Private Cloud Details Table</label><br>
-		<input type="radio" id="data" name="table" value="datacenter">
-		<label for="data">Cloud Data Center Table</label><br>
-		<input type="radio" id="sec" name="table" value="security">
-		<label for="sec">Security Infrastructure Table</label><br>
-		<input type="radio" id="ser" name="table" value="serverconfig">
-		<label for="ser">AIR LAB Server Configuration Table</label><br>
+		<input type="radio"  class="btn-check" id="proj" name="table" value="project" autocomplete="off">
+		<label class="btn btn-outline-primary" for="proj">Project Table</label><br>
+		<input type="radio"  class="btn-check" id="phd" name="table" value="research" autocomplete="off">
+		<label class="btn btn-outline-primary" for="research">Research Table</label><br>
+		<input type="radio"  class="btn-check" id="Mou" name="table" value="Moudetails" autocomplete="off">
+		<label class="btn btn-outline-primary" for="Mou">Memorandum of Understanding Table</label><br>
+		<input type="radio"  class="btn-check" id="fund" name="table" value="funds" autocomplete="off">
+		<label class="btn btn-outline-primary" for="fund">Funds Received Table</label><br>
+		<input type="radio"  class="btn-check" id="priv" name="table" value="private" autocomplete="off">
+		<label class="btn btn-outline-primary" for="priv">Private Cloud Details Table</label><br>
+		<input type="radio"  class="btn-check" id="data" name="table" value="datacenter" autocomplete="off">
+		<label class="btn btn-outline-primary" for="data">Cloud Data Center Table</label><br>
+		<input type="radio"  class="btn-check" id="sec" name="table" value="security" autocomplete="off">
+		<label class="btn btn-outline-primary" for="sec">Security Infrastructure Table</label><br>
+		<input type="radio"  class="btn-check" id="ser" name="table" value="serverconfig" autocomplete="off">
+		<label class="btn btn-outline-primary" for="ser">AIR LAB Server Configuration Table</label><br>
 	</div>';
 }
 elseif ($_SESSION['user_cat'] == 2){
 	echo '<form method="POST" action="main.php">
 	<div>
-		<input type="radio" id="upd" name="operation" value="update">
-		<label for="upd">Update</label><br>
-		<input type="radio" id="rea" name="operation" value="read">
-		<label for="rea">Read</label>
+		<input type="radio"  class="btn-check" id="upd" name="operation" value="update" autocomplete="off">
+		<label  class="btn btn-outline-primary" for="upd">Update</label><br>
+		<input type="radio"  class="btn-check" id="rea" name="operation" value="read" autocomplete="off">
+		<label  class="btn btn-outline-primary" for="rea">Read</label>
 	</div>
 	<div>
 		<h3>Tables available: </h3>
 	</div>
 	<div>
-		<input type="radio" id="proj" name="table" value="project">
-		<label for="proj">Project Table</label><br>
-		<input type="radio" id="phd" name="table" value="research">
-		<label for="research">Research Table</label><br>
-		<input type="radio" id="Mou" name="table" value="Moudetails">
-		<label for="Mou">Memorandum of Understanding Table</label><br>
-		<input type="radio" id="fund" name="table" value="funds">
-		<label for="fund">Funds Received Table</label><br>
-		<input type="radio" id="priv" name="table" value="private">
-		<label for="priv">Private Cloud Details Table</label><br>
-		<input type="radio" id="data" name="table" value="datacenter">
-		<label for="data">Cloud Data Center Table</label><br>
-		<input type="radio" id="sec" name="table" value="security">
-		<label for="sec">Security Infrastructure Table</label><br>
-		<input type="radio" id="ser" name="table" value="serverconfig">
-		<label for="ser">AIR LAB Server Configuration Table</label><br>
+		<input type="radio"  class="btn-check" id="proj" name="table" value="project" autocomplete="off">
+		<label class="btn btn-outline-primary" for="proj">Project Table</label><br>
+		<input type="radio"  class="btn-check" id="phd" name="table" value="research" autocomplete="off">
+		<label class="btn btn-outline-primary" for="research">Research Table</label><br>
+		<input type="radio"  class="btn-check" id="Mou" name="table" value="Moudetails" autocomplete="off">
+		<label class="btn btn-outline-primary" for="Mou">Memorandum of Understanding Table</label><br>
+		<input type="radio"  class="btn-check" id="fund" name="table" value="funds" autocomplete="off">
+		<label class="btn btn-outline-primary" for="fund">Funds Received Table</label><br>
+		<input type="radio"  class="btn-check" id="priv" name="table" value="private" autocomplete="off">
+		<label class="btn btn-outline-primary" for="priv">Private Cloud Details Table</label><br>
+		<input type="radio"  class="btn-check" id="data" name="table" value="datacenter" autocomplete="off">
+		<label class="btn btn-outline-primary" for="data">Cloud Data Center Table</label><br>
+		<input type="radio"  class="btn-check" id="sec" name="table" value="security" autocomplete="off">
+		<label class="btn btn-outline-primary" for="sec">Security Infrastructure Table</label><br>
+		<input type="radio"  class="btn-check" id="ser" name="table" value="serverconfig" autocomplete="off">
+		<label class="btn btn-outline-primary" for="ser">AIR LAB Server Configuration Table</label><br>
 	</div>';
 }
 elseif($_SESSION['user_cat'] == 1){
 	echo '<form method="POST" action="main.php">
 	<div>
-		<input type="radio" id="rea" name="operation" value="read">
-		<label for="rea">Read</label>
+		<input type="radio" class="btn-check" id="rea" name="operation" value="read" autocomplete="off">
+		<label class="btn btn-outline-primary" for="rea">Read</label>
 	</div>
 	<div>
 		<h3>Tables available: </h3>
 	</div>
 	<div>
-		<input type="radio" id="proj" name="table" value="project">
-		<label for="proj">Project Table</label><br>
-		<input type="radio" id="phd" name="table" value="research">
-		<label for="research">Research Table</label><br>
-		<input type="radio" id="Mou" name="table" value="Moudetails">
-		<label for="Mou">Memorandum of Understanding Table</label><br>
-		<input type="radio" id="fund" name="table" value="funds">
-		<label for="fund">Funds Received Table</label><br>
-		<input type="radio" id="priv" name="table" value="private">
-		<label for="priv">Private Cloud Details Table</label><br>
-		<input type="radio" id="data" name="table" value="datacenter">
-		<label for="data">Cloud Data Center Table</label><br>
-		<input type="radio" id="sec" name="table" value="security">
-		<label for="sec">Security Infrastructure Table</label><br>
-		<input type="radio" id="ser" name="table" value="serverconfig">
-		<label for="ser">AIR LAB Server Configuration Table</label><br>
+		<input type="radio"  class="btn-check" id="proj" name="table" value="project" autocomplete="off">
+		<label class="btn btn-outline-primary" for="proj">Project Table</label><br>
+		<input type="radio"  class="btn-check" id="phd" name="table" value="research" autocomplete="off">
+		<label class="btn btn-outline-primary" for="research">Research Table</label><br>
+		<input type="radio" class="btn-check"  id="Mou" name="table" value="Moudetails" autocomplete="off">
+		<label class="btn btn-outline-primary" for="Mou">Memorandum of Understanding Table</label><br>
+		<input type="radio"  class="btn-check" id="fund" name="table" value="funds" autocomplete="off">
+		<label class="btn btn-outline-primary" for="fund">Funds Received Table</label><br>
+		<input type="radio" class="btn-check"  id="priv" name="table" value="private" autocomplete="off">
+		<label class="btn btn-outline-primary" for="priv">Private Cloud Details Table</label><br>
+		<input type="radio"  class="btn-check" id="data" name="table" value="datacenter" autocomplete="off">
+		<label class="btn btn-outline-primary" for="data">Cloud Data Center Table</label><br>
+		<input type="radio"  class="btn-check" id="sec" name="table" value="security" autocomplete="off">
+		<label class="btn btn-outline-primary" for="sec">Security Infrastructure Table</label><br>
+		<input type="radio"  class="btn-check" id="ser" name="table" value="serverconfig" autocomplete="off">
+		<label class="btn btn-outline-primary" for="ser">AIR LAB Server Configuration Table</label><br>
 	</div>';
 }
 ?>
 	<p>
-		<input type="submit" name = "submit" value="Submit">
-		<input type="submit" name = "logout" value="Log Out">
+		<input class="btn btn-outline-success"type="submit" name = "submit" value="Submit">
+		<input class="btn btn-outline-Danger" type="submit" name = "logout" value="Log Out">
 	</p>
 </form>
 </div>
