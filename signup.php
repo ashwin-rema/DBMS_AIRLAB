@@ -127,12 +127,12 @@ if(isset($_POST['email']) && isset($_POST['pass'])){
 <?php
 echo '<form method="post" action="signup.php">
 	<h3>Select the correct category</h3> 
-	<input type="radio" id="stud" name="category" value="student">
-	<label for="stud">Student</label><br>
-	<input type="radio" id="fac" name="category" value="faculty">
-	<label for="fac">Faculty</label><br>
-	<input type="radio" id="adm" name="category" value="admin">
-	<label for="adm">Admin</label>
+	<input type="radio" class="btn-check" id="stud" name="category" value="student" autocomplete="off">
+	<label class="btn btn-outline-primary" for="stud">Student</label><br>
+	<input type="radio" class="btn-check" id="fac" name="category" value="faculty" autocomplete="off">
+	<label class="btn btn-outline-primary" for="fac">Faculty</label><br>
+	<input type="radio" class="btn-check" id="adm" name="category" value="admin" autocomplete="off">
+	<label class="btn btn-outline-primary" for="adm">Admin</label>
 	<br>
     <div class="form-floating col-5">
         	<input type="text" class="form-control" id="floatingName" placeholder="Name">
