@@ -13,6 +13,7 @@ session_start();
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 </head>
 <body>
+	<center><div class="container" style="margin: 100px;padding-left: : 50px">
 <?php
 if ( isset($_SESSION['error']) ) {
     echo '<p style="color:red">'.$_SESSION['error']."</p>\n";
@@ -191,5 +192,7 @@ if ( isset($_SESSION['error']) ) {
 ?>
 <form method="post">
 <input class="btn btn-outline-primary" type="submit" name = "back" value="Back">
+</div>
+</center>
 </body>
 </html>
