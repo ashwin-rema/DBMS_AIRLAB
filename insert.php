@@ -4,8 +4,15 @@ session_start();?>
 <html>
 <head>
     <title>Record to be inserted</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 </head>
 <body>
+    <center><div class="container" style="margin: 100px;padding-left: : 50px">
 <?php
 if (isset($_SESSION['error']) ) {
     echo '<p style="color:red">'.$_SESSION['error']."</p>\n";
@@ -46,12 +53,10 @@ if(isset($_SESSION['table'])){
             return;
         }
         echo '<form method="post">
-        <p>Outcome:
-        <input type="text" name="outcome"></p>
-        <p>MoU_Signal_with:
-        <input type="text" name="MoUSignal"></p>
-        <input type="submit" name="submit" value="Submit"></p>
-        <input type="submit" name="back" value="Back"></p>
+        <input class="form-control" type="text"  placeholder="outcome"><br>
+        <input class="form-control" type="text"  placeholder="MoUSignal"><br>
+        <input class="btn btn-outline-success" type="submit" name="submit" value="Submit"><br>
+        <input class="btn btn-outline-Warning" type="submit" name="back" value="Back"><br>
         </form>';
     }
     elseif($_SESSION['table'] == "private"){
@@ -82,14 +87,11 @@ if(isset($_SESSION['table'])){
             header("Location: main.php");
         }
         echo '<form method="post">
-        <p>Cloud_Type:
-        <input type="text" name="cloud"></p>
-        <p>Capabilities:
-        <input type="text" name="capab"></p>
-        <p>IaaS:
-        <input type="text" name="Iaas"></p>
-        <input type="submit" name="submit" value="Submit"></p>
-        <input type="submit" name="back" value="Back"></p>
+        <input class="form-control" type="text" placeholder="Cloud_Type"><br>
+        <input class="form-control" type="text" placeholder="Capabilities"><br>
+        <input class="form-control" type="text" placeholder="Iaas"><br>
+        <input class="btn btn-outline-success" type="submit" name="submit" value="Submit"><br>
+        <input class="btn btn-outline-Warning" type="submit" name="back" value="Back"><br>
         </form>';
     }
     elseif($_SESSION['table'] == "funds"){
@@ -127,16 +129,12 @@ if(isset($_SESSION['table'])){
             header("Location: main.php");
         }
         echo '<form method="post">
-        <p>Description:
-        <input type="text" name="desc"></p>
-        <p>From_Year:
-        <input type="text" name="from"></p>
-        <p>To_Year:
-        <input type="text" name="to"></p>
-        <p>Grants_Received (Enter only the numeric value in Lakhs):
-        <input type="text" name="grants"></p>
-        <input type="submit" name="submit" value="Submit"></p>
-        <input type="submit" name="back" value="Back"></p>
+        <input class="form-control" type="text" placeholder="Description"><br>
+        <input class="form-control" type="text" placeholder="From_Year"><br>
+        <input class="form-control" type="text" placeholder="To_Year"><br>
+        <input class="form-control" type="text" placeholder="Grants_Received (Enter only the numeric value in Lakhs)"><br>
+        <input class="btn btn-outline-success" type="submit" name="submit" value="Submit"><br>
+        <input class="btn btn-outline-Warning" type="submit" name="back" value="Back"><br>
         </form>';
     }
     elseif($_SESSION['table'] == "datacenter"){
@@ -167,12 +165,10 @@ if(isset($_SESSION['table'])){
             return;
         }
         echo '<form method="post">
-        <p>Component_Name:
-        <input type="text" name="comp"></p>
-        <p>Description:
-        <input type="text" name="desc"></p>
-        <input type="submit" name="submit" value="Submit"></p>
-        <input type="submit" name="back" value="Back"></p>
+        <input class="form-control" type="text" placeholder="Component_Name"><br>
+        <input class="form-control" type="text" placeholder="Description"><br>
+        <input class="btn btn-outline-success" type="submit" name="submit" value="Submit"><br>
+        <input class="btn btn-outline-Warning" type="submit" name="back" value="Back"><br>
         </form>';
     }
     elseif($_SESSION['table'] == "serverconfig"){
@@ -205,18 +201,13 @@ if(isset($_SESSION['table'])){
             header("Location: main.php");
         }
         echo '<form method="post">
-        <p>Name:
-        <input type="text" name="name"></p>
-        <p>HD:
-        <input type="text" name="hd"></p>
-        <p>DVD:
-        <input type="text" name="dvd"></p>
-        <p>RAM:
-        <input type="text" name="ram"></p>
-        <p>Processor:
-        <input type="text" name="processor"></p>
-        <input type="submit" name="submit" value="Submit"></p>
-        <input type="submit" name="back" value="Back"></p>
+        <input class="form-control" type="text" placeholder="Name"><br>
+        <input class="form-control" type="text" placeholder="HD"><br>
+        <input class="form-control" type="text" placeholder="DVD"><br>
+        <input class="form-control" type="text" placeholder="RAM"><br>
+        <input class="form-control" type="text" placeholder="Processor"><br>
+        <input class="btn btn-outline-success" type="submit" name="submit" value="Submit"><br>
+        <input class="btn btn-outline-Warning" type="submit" name="back" value="Back"><br>
         </form>';
     }
     elseif($_SESSION['table'] == "security"){
@@ -301,16 +292,12 @@ if(isset($_SESSION['table'])){
                 }
                 else{
                     echo '<form method="post">
-                    <p>Device Name:
-                    <input type="text" name="device"></p>
-                    <p>Feature Name:
-                    <input type="text" name="feature"></p>
-                    <p>Number of Users (in numbers):
-                    <input type="text" name="users"></p>
-                    <p>Logs (in numbers):
-                    <input type="text" name="logs"></p>
-                    <input type="submit" name="submit" value="Submit"></p>
-                    <input type="submit" name="back" value="Back"></p>
+                    <input class="form-control" type="text" placeholder="Device_Name"><br>
+                    <input class="form-control" type="text" placeholder="Feature Name"><br>
+                    <input class="form-control" type="text" placeholder="Number of Users (in numbers)"><br>
+                    <input class="form-control" type="text" placeholder="logs (in numbers)"><br>
+                    <input class="btn btn-outline-success" type="submit" name="submit" value="Submit"><br>
+                    <input class="btn btn-outline-Warning" type="submit" name="back" value="Back"><br>
                     </form>';
                 }
             }
@@ -377,12 +364,10 @@ if(isset($_SESSION['table'])){
                     }
                 }
                 echo '<form method="post">
-                <p>Device Name:
-                <input type="text" name="device"></p>
-                <p>Quantity:
-                <input type="text" name="quantity"></p>
-                <input type="submit" name="submit" value="Submit"></p>
-                <input type="submit" name="back" value="Back"></p>
+                <input class="form-control" type="text" placeholder="Device Name"><br>
+                <input class="form-control" type="text" placeholder="Quantity"><br>
+                <input class="btn btn-outline-success" type="submit" name="submit" value="Submit"><br>
+                <input class="btn btn-outline-Warning" type="submit" name="back" value="Back"><br>
                 </form>'; 
             }   
             else{
@@ -395,12 +380,12 @@ if(isset($_SESSION['table'])){
         }
         if(!isset($_SESSION['device_table'])){
             echo '<form method = "post">
-            <input type="radio" id="with" name="device_table" value="with_statistics">
-            <label for="with">Device With Statistics Table</label><br>
-            <input type="radio" id="without" name="device_table" value="without_statistics">
-            <label for="without">Device without Statistics Table</label><br>
-            <input type="submit" name="submit" value="Submit"></p>
-            <input type="submit" name="back" value="Back"></p></form>';
+            <input type="radio"  class="btn-check" id="with" name="device_table" value="with_statistics" autocomplete="off">
+            <label class="btn btn-outline-primary" for="with">Device With Statistics Table</label><br>
+            <input type="radio"  class="btn-check" id="without" name="device_table" value="without_statistics" autocomplete="off">
+            <label class="btn btn-outline-primary" for="without">Device without Statistics Table</label><br>
+            <input class="btn btn-outline-success" type="submit" name="submit" value="Submit"><br>
+            <input class="btn btn-outline-Warning" type="submit" name="back" value="Back"><br></form>';
         }
     }
     elseif($_SESSION['table'] == "research"){
@@ -424,5 +409,7 @@ else{
     header("Location: main.php"); 
 }
 ?>
+</div>
+</center>
 </body>
 </html>
